@@ -18,8 +18,8 @@ cask "tenue" do
   # не покупает. Без снятия карантина Gatekeeper показал бы «не удалось
   # проверить разработчика» и не дал запустить.
   postflight_steps do
-    run command: "/usr/bin/xattr",
-        args:    ["-dr", "com.apple.quarantine", "/Applications/Tenue.app"]
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "/Applications/Tenue.app"]
   end
 
   caveats <<~CAVEATS
