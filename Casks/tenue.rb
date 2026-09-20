@@ -27,6 +27,7 @@ cask "tenue" do
     выдаёт владелец после оплаты ($5, разово).
 
     CLI ставится отдельно:
+      brew trust moverq1337/tenue
       brew install moverq1337/tenue/tenue-cli
   CAVEATS
 end
