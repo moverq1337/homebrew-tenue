@@ -6,7 +6,7 @@ class TenueCli < Formula
   # которой нет на сервере, значило бы отдавать 404.
   url "https://tenue.moverq.dev/dl/tenue-darwin-arm64"
   version "0.1.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "a1ba024c5129c8c996699059d6e5dcca290daa3eebb0deace588ff96f6e145c9"
 
   license "MIT"
 
