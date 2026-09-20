@@ -14,8 +14,14 @@ cask "tenue" do
 
   app "Tenue.app"
 
-  # Homebrew снимает карантин, поэтому ad-hoc подписанное приложение
-  # запускается без Apple Developer Program.
+  # Приложение подписано ad-hoc: Apple Developer Program проект сознательно
+  # не покупает. Без снятия карантина Gatekeeper показал бы «не удалось
+  # проверить разработчика» и не дал запустить.
+  postflight_steps do
+    run command: "/usr/bin/xattr",
+        args:    ["-dr", "com.apple.quarantine", "/Applications/Tenue.app"]
+  end
+
   caveats <<~CAVEATS
     Откройте tenué из Launchpad и введите лицензионный ключ — его
     выдаёт владелец после оплаты ($5, разово).
