@@ -1,6 +1,6 @@
 cask "tenue" do
-  version "0.2.0"
-  sha256 "fc4ff2a6d7395f76a7d80e1092d01fa916b5df9f515aa49b181e209ff8c563e4"
+  version "0.2.1"
+  sha256 "5ed1389d0db0285914b2dddc2a14d1ed48948d5b01a2d1d116bf112f1ef74778"
 
   url "https://tenue.moverq.dev/dl/Tenue.dmg"
   name "tenué"
