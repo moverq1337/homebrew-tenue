@@ -5,8 +5,8 @@ class TenueCli < Formula
   # сознательно обходится Command Line Tools. Обещать сборку под Intel,
   # которой нет на сервере, значило бы отдавать 404.
   url "https://tenue.moverq.dev/dl/tenue-darwin-arm64"
-  version "0.1.2"
-  sha256 "748e0a7b6b4b686c71a6aca00421875c2640eaa2fe13addc7de4b04f6f513b4b"
+  version "0.2.0"
+  sha256 "df53e807fdf918603dc93e9a5c898af843a09d5cf7ff265f390a05de55877aca"
 
   license "MIT"
 
